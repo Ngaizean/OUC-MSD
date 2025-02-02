@@ -1,0 +1,4 @@
+<view class="cover-container">
+  <image class="cover-image" src="/images/cover-background.png"></image>
+  <button class="enter-button" bindtap="handleButtonTap">进入</button>
+</view>

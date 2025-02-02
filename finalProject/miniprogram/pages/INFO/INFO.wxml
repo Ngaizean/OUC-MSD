@@ -1,0 +1,15 @@
+<view class="text-container">
+  <text user-select="true" wx:if="{{status === 'safe'}}" class="text-paragraph">
+    本小程序提供拼车服务，旨在为用户提供便捷的出行选择。使用本服务时，请务必确保核对车辆信息，并与司机保持良好沟通。在使用过程中，请注意自身财产和人身安全。如遇紧急情况，请及时拨打报警电话并通知相关人员。感谢您的理解与配合，祝您旅途愉快！
+  </text>
+  <text user-select="true" wx:if="{{status === 'aboutus'}}" class="text-paragraph">
+    本小程序从开课后开始构思，历经两个礼拜的开发，也是终究落地。顿悟总是智者的权利，生性愚顽如我者，凡事也只好依靠一个渐字，花了很多精力和时间就为了完成一个课程的大作业。有些时候我自己在想，这到底是为了什么，其实我不必去这么费力不讨好完成一个项目，明明可以选择走上一条轻松的道路。
+  </text>
+  <text user-select="true" wx:if="{{status === 'aboutus'}}" class="text-paragraph">
+    细数过往很多经历，很多难关得以跨越，唯认真二字，这份力量给予的信心，唯有渡涉苦海方能获得。审视这个臃肿的项目，很多代码的逻辑和结构都不忍卒读，但也总算是自己一个阶段，一个课程的交代，一个句号。
+  </text>
+  <text user-select="true" wx:if="{{status === 'safe'}}" class="text-paragraph">
+    为确保拼车体验安全可靠，我们建议您只选择在平台上已认证的司机并遵循相关安全指南。请勿透露过多个人信息，并在安全场所上车和下车。如有任何疑问或问题，请联系平台客服获取帮助。
+  </text>
+  <button class="enter-button" bindtap="reward">赞赏作者</button>
+</view>

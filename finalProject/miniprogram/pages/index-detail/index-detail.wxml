@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="details">
+    <view class="detail-item">
+      <text>起点: {{now_data.begin_place.name}}</text>
+    </view>
+    <view class="detail-item">
+      <text>终点: {{now_data.end_place.name}}</text>
+    </view>
+    <view class="detail-item">
+      <text>出发日期: {{now_data.date}}</text>
+    </view>
+    <view class="detail-item">
+      <text>出发时间: {{now_data.time}}</text>
+    </view>
+    <view class="detail-item">
+      <text>剩余车位: {{now_data.rest_seat}}</text>
+    </view>
+    <view class="detail-item">
+      <text>备注: {{now_data.text}}</text>
+    </view>
+    <view class="detail-item">
+      <text>参与人:  </text>
+      <block wx:for="{{users}}" wx:key="*this" wx:for-item="item" wx:for-index="index">
+        <text>{{item}}</text>
+        <text wx:if="{{index < users.length - 1}}">, </text>
+      </block>
+    </view>
+
+  </view>
+  
+  <!-- 操作按钮 -->
+  <view class="buttons">
+    <button bindtap="checkpassenger" 	disabled="{{buttonclose}}">{{user_status? '加入' : '退出'}}</button>
+    <button bindtap="real_time" disabled="{{buttonclose || buttonrealtime}}">实时拼车</button>
+    <button class="more-options" bindtap="openMoreOptions">{{faour? '收藏' : '取消收藏'}}</button>
+  </view>
+</view>

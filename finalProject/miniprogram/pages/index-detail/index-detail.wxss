@@ -1,0 +1,49 @@
+.container {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+}
+
+.details {
+  width: 83%;
+  margin-bottom: 30rpx;
+  background-color: #ffffff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 5rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.detail-item {
+  margin-bottom: 20rpx;
+  font-size: 37rpx;
+  color: #333333;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rpx;
+}
+
+button {
+  width: 30%;
+  height: 70rpx;
+  background-color: #3883FF;
+  color: #ffffff;
+  border-radius: 25rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background-color: #ddd; /* 禁用时的背景色 */
+  color: #888; /* 禁用时的文本色 */
+  border: 1px solid #ccc; /* 禁用时的边框样式 */
+}
+
+.more-options {
+  background-color: #ffaa00;
+}

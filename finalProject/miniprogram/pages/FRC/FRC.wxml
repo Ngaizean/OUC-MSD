@@ -1,0 +1,15 @@
+<view class="container">
+  <view wx:for="{{array}}" wx:key="id" data-ID="{{item._id}}" bindtap="navigateToDetail" class="box">
+    <view class="info">
+      <view class="places">
+        <text>{{item.begin_place.name}} -> {{item.end_place.name}}</text>
+      </view>
+      <view class="date-time">
+        <text>{{item.date}} {{item.time}}</text>
+      </view>
+      <view class="seats">
+        <text>剩余座位: {{item.rest_seat}}</text>
+      </view>
+    </view>
+  </view>
+</view>

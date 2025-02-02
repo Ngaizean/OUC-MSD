@@ -1,0 +1,8 @@
+<view class="user-info">
+  <button class="avatar" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar-image" src="{{avatarUrl}}" />
+  </button> 
+  <input type="nickname" class="nickname-input" data-field = "username" placeholder="请输入昵称" bindblur="nameinput" />
+  <input type="number" class="nickname-input" data-field = "phone" placeholder="请输入手机号码" bindblur="nameinput" />
+  <button class="submit-button" bindtap="handleSubmit">确定</button>
+</view>

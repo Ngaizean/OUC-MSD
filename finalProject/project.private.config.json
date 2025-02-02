@@ -1,0 +1,125 @@
+{
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/post/post",
+          "pathName": "pages/post/post",
+          "query": "",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "pages/real-time/real-time",
+          "pathName": "pages/real-time/real-time",
+          "query": "data_id=8df0e92f66d802d9099895237f675c57&user_id=9c1e6a3166d91f6d09bdb2535c0dadc9",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "pages/INFO/INFO",
+          "pathName": "pages/INFO/INFO",
+          "query": "",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "pages/FRC/FRC",
+          "pathName": "pages/FRC/FRC",
+          "query": "field=create",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "pages/index-detail/index-detail",
+          "pathName": "pages/index-detail/index-detail",
+          "query": "id=f380561066d80143099772b439751a6a",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "pages/index-detail/index-detail",
+          "pathName": "pages/index-detail/index-detail",
+          "query": "id=ef45322e66d7f82f099cd2ed0be18d4b",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "pages/register/register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "launchMode": "default",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "首页-快速开始",
+          "pathName": "pages/index/index",
+          "query": ""
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods-list/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "云开发示例",
+          "pathName": "pages/examples/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/user-center/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "car"
+}

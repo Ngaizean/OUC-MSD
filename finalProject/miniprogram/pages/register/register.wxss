@@ -1,0 +1,54 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh; /* Centers content vertically */
+  padding: 20px; /* Adds padding around the container */
+}
+
+.avatar {
+  width: 100px; /* Increased size for better visibility */
+  height: 100px;
+  margin-bottom: 40px; /* More space between avatar and input */
+  background: none;
+  border: none; /* Removes button border */
+  padding: 0;
+}
+
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Makes avatar circular */
+  object-fit: cover; /* Ensures image covers entire area */
+  
+}
+
+.nickname-input {
+  width: 70%; /* Slightly wider input for better alignment */
+  height: 45px; /* Increased height for better touch target */
+  margin-bottom: 20px; /* More space below the input */
+  background: #f1f1f1; /* Softer background color */
+  border-radius: 10px; /* Softer corners */
+  line-height: 45px;
+  text-align: center;
+  padding-left: 15px;
+  font-size: 20px;
+  
+}
+
+.submit-button {
+  position: absolute;
+  bottom: 15%; /* 调整按钮在页面底部的位置 */
+  width: 90%; /* 增加按钮宽度 */
+  height: 80rpx; /* 增加按钮高度 */
+  background-color: rgba(56, 131, 255, 0.9); /* 更加饱和的背景色 */
+  border-radius: 40rpx; /* 增大边框圆角 */
+  text-align: center;
+  line-height: 45rpx; /* 调整文本垂直居中 */
+  font-size: 24px; /* 增加字体大小 */
+  color: #ffffff; /* 修改字体颜色为白色 */
+  font-weight: bold; /* 加粗字体 */
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  border: 2rpx solid #ffffff; /* 增加白色边框 */
+}

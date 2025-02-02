@@ -1,0 +1,35 @@
+.text-container {
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  margin-top: -40px;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.text-paragraph {
+  font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 15px; /* 增加段落之间的间距 */
+  color: #333333;
+  text-align: justify;
+  width: 100%;
+}
+
+.enter-button {
+  width: 90%;
+  height: 80rpx;
+  background-color: rgba(56, 131, 255, 0.9);
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.2);
+  border: 2rpx solid #ffffff;
+  margin-top: auto; /* 按钮向下推 */
+  margin-bottom: 20px;
+}

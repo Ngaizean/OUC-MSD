@@ -1,0 +1,47 @@
+<!-- pages/real-time/real-time.wxml -->
+<view class="container">
+  <!-- 图片上传区域 -->
+  <view class="upload-section">
+  <!-- 第一行：车辆信息和图标 -->
+  <view class="info-row">
+    <label class="upload-label" bindtap="preview">车辆信息</label>
+    <image src="cloud://test-7gils3dba8329fb3.7465-test-7gils3dba8329fb3-1328827207/预览-打开_preview-open.svg" class="icon-button" bindtap="preview"></image>
+  </view>
+  
+  <!-- 第二行：图片组件 -->
+  <view class="image-row">
+    <image show-menu-by-longpress="true" src="{{userImage}}" mode="aspectFit" bindtap="uploadcarinfo" class="upload-image"></image>
+  </view>
+</view>
+
+
+  <!-- 乘客名单区域 -->
+<view class="passenger-section">
+  <block wx:for="{{passengerList}}" wx:key="id">
+    <view class="passenger-item" bindtap="showCallModal">
+      <text class="passenger-name {{item.status}}">{{item.name}}</text>
+      <view class="status-box {{item.status}}"></view> <!-- 用于显示状态颜色 -->
+    </view>
+  </block>
+</view>
+
+
+  <!-- 地图区域 -->
+
+    <map class="map-section"
+      id="map"
+      longitude="{{map_longitude}}"
+      latitude="{{map_latitude}}"
+      markers="{{markers}}"
+      style="width: 100%; height: 300px;"
+      scale="17"
+    ></map>
+
+  <!-- 操作按钮区域 -->
+  <view class="button-section">
+    <button class="button refresh-button" bindtap="totalLocation">刷新共享位置</button>
+    <button class="button location-button" bindtap="checkNowlocation">查看当前位置</button>
+    <button class="button plan-button" bindtap="roadPlaning">前往拼车点</button>
+    <button class="button sign-button" disabled="{{buttonclose}}" bindtap="signIN">{{signinStatus ? '已签到' : '签到'}}</button>
+  </view>
+</view>

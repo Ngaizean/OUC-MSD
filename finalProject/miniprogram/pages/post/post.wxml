@@ -1,0 +1,71 @@
+<view class="container">
+  <!-- 出发地点选择 -->
+  <view class="form-group">
+    <view class="icon-button" bindtap="startmaptaking">
+      <image src="cloud://test-7gils3dba8329fb3.7465-test-7gils3dba8329fb3-1328827207/起飞_take-off-one.svg" class="icon"></image> <!-- 出发地点图标 -->
+      <text wx:if="{{begin_place.name === ''}}">点击选择起点</text>
+      <text wx:else>{{begin_place.name}}</text>
+    </view>
+  </view>
+  
+  <!-- 目的地选择 -->
+  <view class="form-group">
+    <view class="icon-button" bindtap="endmaptaking">
+      <image src="cloud://test-7gils3dba8329fb3.7465-test-7gils3dba8329fb3-1328827207/降落_landing.svg" class="icon"></image> <!-- 目的地图标 -->
+      <text wx:if="{{end_place.name === ''}}">点击选择终点</text>
+      <text wx:else>{{end_place.name}}</text>
+    </view>  
+  </view>
+  
+  <!-- 出发日期选择 -->
+  <view class="form-group">
+    <image src="cloud://test-7gils3dba8329fb3.7465-test-7gils3dba8329fb3-1328827207/日历_calendar-dot.svg" class="icon"></image>
+    <picker mode="date" start="{{today}}" end="{{year}}-12-31" fields="day" bindchange="handleDateChange">
+      <view class="picker">
+        {{date ? date : '请选择出发日期'}}
+      </view>
+    </picker>
+  </view>
+  
+  <!-- 出发时间选择 -->
+  <view class="form-group">
+    <image src="cloud://test-7gils3dba8329fb3.7465-test-7gils3dba8329fb3-1328827207/时间_time.svg" class="icon"></image>
+    <picker mode="time" bindchange="handleTimeChange">
+      <view class="picker">
+        {{time ? time : '请选择出发时间'}}
+      </view>
+    </picker>
+  </view>
+  
+  <!-- 剩余空位输入 -->
+  <view class="form-group">
+    <image src="cloud://test-7gils3dba8329fb3.7465-test-7gils3dba8329fb3-1328827207/车载座_baby-car-seat.svg" class="icon"></image>
+    <picker mode="selector" range="{{seatrange}}" bindchange="handleSeatsChange">
+      <view class="picker">
+        {{seats > 0 ? seats : '请选择剩余车位'}}
+      </view>
+    </picker>
+  </view>
+  
+
+
+  <!-- 备注输入 -->
+  <view class="form-group">
+    <textarea placeholder="请输入备注信息" value="{{remarks}}" bindinput="handleInput" data-field="remarks"></textarea>
+  </view>
+
+  <!-- 发布按钮 -->
+  <view class="button-container">
+    <button class="publish-button" bindtap="adddata">发布</button>
+  </view>
+
+  <view class="disclaimer">
+    <checkbox-group bindchange="handleCheckbox">
+      <label class="checkbox-label">
+        <checkbox checked="{{checkbox}}"/> 我已阅读并同意免责声明
+      </label>
+    </checkbox-group>
+  </view>
+</view>
+
+

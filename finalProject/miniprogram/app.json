@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/cover/cover",
+    "pages/index1/index1",
+    "pages/register/register",
+    "pages/me/me",
+    "pages/post/post",
+    "pages/real-time/real-time",
+    "pages/index-detail/index-detail",
+    "pages/FRC/FRC",
+    "pages/INFO/INFO"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF6F61",  
+    "navigationBarTitleText": "海拼",
+    "navigationBarTextStyle": "white"  
+  },
+  "style": "v2",
+  "tabBar": {
+    "color": "#A2A9B0",
+    "selectedColor": "#07C160",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index1/index1",
+        "text": "广场",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "发布",
+        "iconPath": "images/icons/business.png",
+        "selectedIconPath": "images/icons/business-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/icons/usercenter.png",
+        "selectedIconPath": "images/icons/usercenter-active.png"
+      }
+    ]
+  },
+    "plugins": 
+    {
+        "chooseLocation": {
+        "version": "1.0.12",
+        "provider": "wx76a9a06e5b4e693e"
+        },
+        "routePlan": {
+          "version": "1.0.18",
+          "provider": "wx50b5593e81dd937a"
+          }
+    },
+    "permission": 
+    {
+      "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+      }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
+}

@@ -1,0 +1,128 @@
+/* pages/real-time/real-time.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column; /* 垂直排列子元素 */
+  align-items: flex-start; /* 子元素左对齐 */
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row; /* 水平排列车辆信息和图标 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  width: 100%; /* 确保在容器中居中 */
+}
+
+.upload-label {
+  margin-right: 8px; /* 文本和图标之间的间距 */
+}
+
+.icon-button {
+  width: 20px; /* 图标按钮的宽度 */
+  height: 20px; /* 图标按钮的高度 */
+  cursor: pointer; /* 鼠标悬停时显示手形指针 */
+}
+
+.image-row {
+  margin-top: 10px; /* 图片和第一行之间的间距 */
+}
+
+.upload-image {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+
+.map-section {
+  margin-top: 20px;
+}
+
+.button-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  flex: 1 1 calc(50% - 10px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.refresh-button {
+  background-color: #4caf50; /* Green */
+}
+
+.location-button {
+  background-color: #2196f3; /* Blue */
+}
+
+.plan-button {
+  background-color: #ff9800; /* Orange */
+}
+
+.sign-button {
+  background-color: #f44336; /* Red */
+}
+
+button:disabled {
+  background-color: #bdbdbd; /* Gray for disabled state */
+}
+
+.passenger-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+  gap: 10px; /* Space between items */
+  margin-top: -15px;
+  margin-bottom: -10px;
+}
+
+.passenger-item {
+  width: 60%; /* Two items per row */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.passenger-name {
+  font-size: 18px;
+}
+
+.passenger-name.false {
+  color: red; /* Color for red status */
+}
+
+.passenger-name.true {
+  color: green; /* Color for green status */
+}
+
+.status-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.status-box.false {
+  background-color: red;
+}
+
+.status-box.true {
+  background-color: green;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+  padding: 20rpx;
+}
+
+.box {
+  display: flex;
+  padding: 20rpx;
+  background-color: #f0f0f0;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  height: 160rpx; /* 固定高度 */
+  width: 100%; /* 确保每个条目宽度相同 */
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.places, .date-time, .seats {
+  font-size: 40rpx;
+  color: #333;
+  text-align: left; /* 左对齐 */
+  white-space: nowrap; /* 禁止换行 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 超出部分用省略号显示 */
+}

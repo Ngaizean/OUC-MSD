@@ -1,0 +1,1 @@
+"D:\微信web开发者工具\cli.bat" cloud functions deploy --e test-7gils3dba8329fb3 --n quickstartFunctions --r --project "D:\Desktop\MSD\car" --report_first --report
