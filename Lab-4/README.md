@@ -123,7 +123,7 @@
 
   - **暂时实现效果**
 
-    <img src="..\pic\Lab-4\1.jpg" alt="1" style="zoom:25%;" />
+    <img src="../pic/Lab-4/1.jpg" alt="1" style="zoom:25%;" />
 
 ### 逻辑实现(`index.js`)
 
@@ -214,11 +214,11 @@
 
 - 综合以上所有文件, 得到最后效果
 
-  <img src="..\pic\Lab-4\2.jpg" alt="2" style="zoom:25%;" />
+  <img src="../pic/Lab-4/2.jpg" alt="2" style="zoom:25%;" />
 
 ## 三、效果展示
 
-<img src="..\pic\Lab-4\3.jpg" alt="3" style="zoom:25%;" /><img src="..\pic\Lab-4\4.jpg" alt="4" style="zoom:25%;" />
+<img src="../pic/Lab-4/3.jpg" alt="3" style="zoom:25%;" /><img src="../pic/Lab-4/4.jpg" alt="4" style="zoom:25%;" />
 
 
 
@@ -228,7 +228,7 @@
 
 - 网络资源容易因为网络波动的原因或者是服务者取消资源的情况导致失效. 因此将视频资源下载下来并上传至云储存中, 云储存使用前必须开通云开发, 云开发的使用详情看上一章节. 进入云开发后点击云储存, 上传已经下载的视频
 
-  <img src="..\pic\Lab-4\5.jpg" alt="5" style="zoom:25%;" />
+  <img src="../pic/Lab-4/5.jpg" alt="5" style="zoom:25%;" />
 
   - 把原来的`url`更换至`File ID`
 

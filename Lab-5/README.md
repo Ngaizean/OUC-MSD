@@ -28,7 +28,7 @@
 
 - 文件结构见下图
 
-  <img src="..\pic\Lab-5\1.jpg" alt="1" style="zoom:33%;" />
+  <img src="../pic/Lab-5/1.jpg" alt="1" style="zoom:33%;" />
 
   - `detail`和`my`页面分别用于新闻的详情页和个人用户页面
   - 创建这两个页面后, 需要在`app.json`的`Windows`属性中进行引用.
@@ -257,7 +257,7 @@
 
 - 实现效果
 
-  <img src="..\pic\Lab-5\2.jpg" alt="2" style="zoom:33%;" /><img src="..\pic\Lab-5\3.jpg" alt="3" style="zoom:33%;" />
+  <img src="../pic/Lab-5/2.jpg" alt="2" style="zoom:33%;" /><img src="../pic/Lab-5/3.jpg" alt="3" style="zoom:33%;" />
 
 ### 逻辑实现
 
@@ -446,7 +446,7 @@ onShow: function()
 
 ## 三、程序运行结果
 
-<img src="..\pic\Lab-5\6.jpg" alt="6" style="zoom:33%;" /><img src="..\pic\Lab-5\4.jpg" alt="4" style="zoom:33%;" /><img src="..\pic\Lab-5\5.jpg" alt="5" style="zoom:33%;" />
+<img src="../pic/Lab-5/6.jpg" alt="6" style="zoom:33%;" /><img src="../pic/Lab-5/4.jpg" alt="4" style="zoom:33%;" /><img src="../pic/Lab-5/5.jpg" alt="5" style="zoom:33%;" />
 
 
 
@@ -483,7 +483,7 @@ onShow: function()
 
   - 实现思想是, 是页面加载时,将几个新闻中的图片的地址进行拉取, 并且封装在对象中. 封装完毕后, 替换data中的数据, 最后触发渲染层即可
 
-    <img src="..\pic\Lab-5\7.jpg" alt="7" style="zoom:33%;" />
+    <img src="../pic/Lab-5/7.jpg" alt="7" style="zoom:33%;" />
 
 ### 进一步优化轮播图
 

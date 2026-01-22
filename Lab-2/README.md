@@ -27,17 +27,17 @@
 2. 小程序的天气状态展示需要和风天气提供的天气状态图标, 官网[下载链接](https://icons.qweather.com/)
    - 也可以通过官方给定的`GitHub`地址下载: `https://github.com/qwd/Icons/releases/download/v1.6.0/QWeather-Icons-1.6.0.zip`
 
-<img src="..\pic\Lab-2\1.jpg" alt="1" style="zoom:33%;" />
+<img src="../pic/Lab-2/1.jpg" alt="1" style="zoom:33%;" />
 
 3. **API密钥申请**
 
    - 完成开发者的注册后, 进入和风天气[控制台](https://console.qweather.com/#/console), 在`项目管理`一栏中点击创建项目, 选择**免费订阅**以及**`Web API`**
 
-     <img src="..\pic\Lab-2\2.jpg" alt="2" style="zoom:33%;" />
+     <img src="../pic/Lab-2/2.jpg" alt="2" style="zoom:33%;" />
 
    - 创建成功后, 记录下`KEY`
 
-     <img src="..\pic\Lab-2\3.jpg" alt="3" style="zoom:33%;" />
+     <img src="../pic/Lab-2/3.jpg" alt="3" style="zoom:33%;" />
 
 4. **服务器域名配置**
 
@@ -49,7 +49,7 @@
      https://geoapi.qweather.com
      ```
 
-     <img src="..\pic\Lab-2\4.jpg" alt="4" style="zoom:33%;" />
+     <img src="../pic/Lab-2/4.jpg" alt="4" style="zoom:33%;" />
 
 ### 项目框架构建
 
@@ -59,7 +59,7 @@
 
    - 将下载好的和风天气天气状态图标文件夹移入自定义创建的文件夹`images`中, 该文件夹和`Pages`同级. 文件组织架构如下图所示
 
-     <img src="..\pic\Lab-2\5.jpg" alt="5" style="zoom:33%;" />
+     <img src="../pic/Lab-2/5.jpg" alt="5" style="zoom:33%;" />
 
 ### 小程序视图设计
 
@@ -188,7 +188,7 @@
 
    - 根据和风天气请求天气数据的规定, URL中需要有和风天气中规定中的城市ID即`location`参数, 详见此一[章节](https://dev.qweather.com/docs/api/weather/weather-now/). 因此获取某个地区的实时天气之前, 首先要获取该地区的城市ID. 下图为请求实时天气的两个必选参数.
 
-     <img src="..\pic\Lab-2\6.jpg" alt="6" style="zoom:33%;" />
+     <img src="../pic/Lab-2/6.jpg" alt="6" style="zoom:33%;" />
 
    - 有了这个方向后, 即我们编写获取实时天气函数之前, 应该先编写获取城市ID的函数. 和风天气同样给出了查询城市ID的API请求参数和方法, 详见这一[章节](https://dev.qweather.com/docs/api/geoapi/city-lookup/). 主要的必选参数有`location`, `key`. 分别对应要查询的地区和API密钥, **值得注意的是**, `location`参数接受中文的输入, 并且支持模糊搜索, 和风天气会默认给出最相近的10个城市的ID. 除了两个重要的必选参数外, 比较值得使用的可选参数有两个: `adm`和`number`, 分别对应要查询的地区的上一级行政区和返回城市的数量(默认是10个). **`adm`的使用可以有效避免重名查询导致的天气查询储存的状况**. 例如, 同样含有西安字样, 可以隶属山西省也可以隶属吉林省辽源市, 不同的上级区划可以区别同名查询. 总结以上, 即查询ID建议使用上述四个参数进行查询.
 
@@ -229,7 +229,7 @@
 
    - 获得和风天气返回的数据后, 对其中的数据进行提取, 根据其返回的数据包来看, 对应的城市ID以数据的形式存如返回数据包的`data`字段的`location`中, 见下图, 为部分数据包结构. 因而`city_id = res.data.location[0].id`
 
-     <img src="..\pic\Lab-2\7.jpg" alt="7" style="zoom:33%;" />
+     <img src="../pic/Lab-2/7.jpg" alt="7" style="zoom:33%;" />
 
 2. **获取城市实时天气**
 
@@ -259,7 +259,7 @@
 
    - 得到服务器的返回的数据后, 只需要将其中符合我们小程序需求的详细天气的字段提取出来, 并设置数据. 就可以实现动态变量的效果. 也是上文`index.wxml`中`now`的来由, 通过观察返回的数据包可知, 详细的天气数据储存在数据包中的`data`字段中, 该字段中`now`对象包含我们所需要全部详细天气数据
 
-     <img src="..\pic\Lab-2\8.jpg" alt="8" style="zoom:33%;" />
+     <img src="../pic/Lab-2/8.jpg" alt="8" style="zoom:33%;" />
 
 3. 其他逻辑实现
 
@@ -278,7 +278,7 @@
 
 ## 三、程序运行结果
 
-<img src="..\pic\Lab-2\12.jpg" alt="12" style="zoom:25%;" /><img src="..\pic\Lab-2\9.jpg" alt="9" style="zoom:25%;" /><img src="..\pic\Lab-2\11.jpg" alt="11" style="zoom:25%;" /><img src="..\pic\Lab-2\10.jpg" alt="10" style="zoom:25%;" />
+<img src="../pic/Lab-2/12.jpg" alt="12" style="zoom:25%;" /><img src="../pic/Lab-2/9.jpg" alt="9" style="zoom:25%;" /><img src="../pic/Lab-2/11.jpg" alt="11" style="zoom:25%;" /><img src="../pic/Lab-2/10.jpg" alt="10" style="zoom:25%;" />
 
 
 

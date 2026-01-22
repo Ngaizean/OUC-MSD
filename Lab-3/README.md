@@ -29,11 +29,11 @@
 
 - 在搭建数据库, 云函数前需要将环境搭建好, 并把环境ID进行记录.
 
-  <img src="..\pic\Lab-3\1.jpg" alt="1" style="zoom:25%;" />
+  <img src="../pic/Lab-3/1.jpg" alt="1" style="zoom:25%;" />
 
   
 
-  <img src="..\pic\Lab-3\2.jpg" alt="2" style="zoom:25%;" />
+  <img src="../pic/Lab-3/2.jpg" alt="2" style="zoom:25%;" />
 
 #### 搭建数据库
 
@@ -43,9 +43,9 @@
 
 - 对于本微信小程序, 需要储存的两个表(也叫集合)为`trash`和`type`, 相关的数据集文件已在仓库进行同步, 命名分别为: `trash.json`和`type.json`, 只需要将该两个文件直接**导入**数据库即可一键创建条目.
 
-  <img src="..\pic\Lab-3\3.jpg" alt="3" style="zoom:25%;" />
+  <img src="../pic/Lab-3/3.jpg" alt="3" style="zoom:25%;" />
 
-  <img src="..\pic\Lab-3\4.jpg" alt="4" style="zoom:25%;" />
+  <img src="../pic/Lab-3/4.jpg" alt="4" style="zoom:25%;" />
 
 ### 部署云函数
 
@@ -61,15 +61,15 @@
 
 - 首先将云函数的环境和上文创建的云开发环境进行关联
 
-  <img src="..\pic\Lab-3\5.jpg" alt="5" style="zoom:25%;" />
+  <img src="../pic/Lab-3/5.jpg" alt="5" style="zoom:25%;" />
 
 - 将本地上的云函数文件夹依次全部选择部署, 选择不上传`node_moudle`该选项上传部署
 
-  <img src="..\pic\Lab-3\6.jpg" alt="6" style="zoom:25%;" />
+  <img src="../pic/Lab-3/6.jpg" alt="6" style="zoom:25%;" />
 
 - 点击导航栏的`云开发`, 进入云开发页面后, 再次点击`云函数`, 查看是否部署成功.
 
-  <img src="..\pic\Lab-3\7.jpg" alt="7" style="zoom:25%;" />
+  <img src="../pic/Lab-3/7.jpg" alt="7" style="zoom:25%;" />
 
 ### 百度云API应用创建
 
@@ -79,29 +79,29 @@
 
 - 创建完成后, 在概览页面进行零取免费调用额度
 
-  <img src="..\pic\Lab-3\8.jpg" alt="8" style="zoom:25%;" />
+  <img src="../pic/Lab-3/8.jpg" alt="8" style="zoom:25%;" />
 
-  <img src="..\pic\Lab-3\9.jpg" alt="9" style="zoom:25%;" />
+  <img src="../pic/Lab-3/9.jpg" alt="9" style="zoom:25%;" />
 
-  <img src="..\pic\Lab-3\11.jpg" alt="11" style="zoom:25%;" />
+  <img src="../pic/Lab-3/11.jpg" alt="11" style="zoom:25%;" />
 
 - 完成以上步骤后, 进入应用的详情列表, 查看对应的密钥, 需要进行记录.
 
-  <img src="..\pic\Lab-3\12.jpg" alt="12" style="zoom:25%;" />
+  <img src="../pic/Lab-3/12.jpg" alt="12" style="zoom:25%;" />
 
 ### 替换源码参数
 
 - 将本程序的源码导入开发者工具后, 在`project.config.json`文件中替换对应的`appid`, **注意此处的`appid`是==微信小程序==的而不是百度云的**
 
-  <img src="..\pic\Lab-3\15.jpg" alt="13" style="zoom:25%;" />
+  <img src="../pic/Lab-3/15.jpg" alt="13" style="zoom:25%;" />
 
 - 将刚刚记录的百度云`API Key`和`Secret Key`在`\pages\search\search.js`文件中进行替换
 
-  <img src="..\pic\Lab-3\13.jpg" alt="13" style="zoom:25%;" />
+  <img src="../pic/Lab-3/13.jpg" alt="13" style="zoom:25%;" />
 
 - 将云开发创建的环境ID替换至`app.js`文件当中
 
-  <img src="..\pic\Lab-3\14.jpg" alt="14" style="zoom:25%;" />
+  <img src="../pic/Lab-3/14.jpg" alt="14" style="zoom:25%;" />
 
   
 
@@ -109,9 +109,9 @@
 
 ## 三、程序运行结果
 
-<img src="..\pic\Lab-3\16.jpg" alt="16" style="zoom:20%;" /><img src="..\pic\Lab-3\17.jpg" alt="17" style="zoom:20%;" /><img src="..\pic\Lab-3\18.jpg" alt="18" style="zoom:20%;" />
+<img src="../pic/Lab-3/16.jpg" alt="16" style="zoom:20%;" /><img src="../pic/Lab-3/17.jpg" alt="17" style="zoom:20%;" /><img src="../pic/Lab-3/18.jpg" alt="18" style="zoom:20%;" />
 
-<img src="..\pic\Lab-3\19.jpg" alt="19" style="zoom:20%;" /><img src="..\pic\Lab-3\20.jpg" alt="20" style="zoom:20%;" /><img src="..\pic\Lab-3\21.jpg" alt="21" style="zoom:20%;" />
+<img src="../pic/Lab-3/19.jpg" alt="19" style="zoom:20%;" /><img src="../pic/Lab-3/20.jpg" alt="20" style="zoom:20%;" /><img src="../pic/Lab-3/21.jpg" alt="21" style="zoom:20%;" />
 
 
 
@@ -121,7 +121,7 @@
 
 - 微信云开发经常会出现数据加载失败的情况, 或者是使用云储存时, 上传失败的原因, 见下图.
 
-  <img src="..\pic\Lab-3\10.jpg" alt="10" style="zoom:25%;" />
+  <img src="../pic/Lab-3/10.jpg" alt="10" style="zoom:25%;" />
 
   - **这样的问题一般可以通过关闭全局代理, 如果是规则代理下则将系统代理直接关闭. 另外一种可能是当前网络出现问题, 一般更换手机热点后, 刷新多次后得到解决.**
 
@@ -129,9 +129,9 @@
 
 - 在微信官方社区给出的[公告](https://developers.weixin.qq.com/community/develop/doc/00022c683e8a80b29bed2142b56c01)中, 明确指出20222年10月25日后基础库2.27.1及以上的小程序不再支持`wx.getUserProfile`接口、`wx.getUserInfo`接口, 强行调用会出现默认的灰头像, 昵称变为"微信用户"
 
-  <img src="..\pic\Lab-3\22.jpg" alt="22" style="zoom:50%;" />
+  <img src="../pic/Lab-3/22.jpg" alt="22" style="zoom:50%;" />
 
-  <img src="..\pic\Lab-3\23.jpg" alt="23" style="zoom:15%;" />
+  <img src="../pic/Lab-3/23.jpg" alt="23" style="zoom:15%;" />
 
   - **解决方法是使用官方最新给出的昵称头像填写能力**, 找到源码中的`my.js`和`my.wxml`文件, 修改其中原本的代码, 更正如下
 
@@ -153,13 +153,13 @@
 
   - 实现效果
 
-    <img src="..\pic\Lab-3\24.jpg" alt="24" style="zoom:25%;" />
+    <img src="../pic/Lab-3/24.jpg" alt="24" style="zoom:25%;" />
 
 ### 受信任服务域名问题
 
 - 手机端真机调试时, 出现无法搜索的情况, 查看错误信息后发现提示需要将百度的`api`网址添加到微信开发者平台中的受信任的服务域名的列表当中, 这是因为对于电脑的调试而言, 是不限制对外界域名的联系, 而对于手机的小程序的使用是只允许和域名的白名单进行通信, 所以将`https://aip.baidubce.com`添加至白名单即可.
 
-  <img src="..\pic\Lab-3\25.png" alt="25" style="zoom:30%;" />
+  <img src="../pic/Lab-3/25.png" alt="25" style="zoom:30%;" />
 
 
 

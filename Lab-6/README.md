@@ -41,7 +41,7 @@
 
 - **新建**`utils`文件夹, 将用于公共数据的储存.
 
-  <img src="..\pic\Lab-6\1.jpg" alt="1" style="zoom:33%;" />
+  <img src="../pic/Lab-6/1.jpg" alt="1" style="zoom:33%;" />
 
 ### 页面设计
 
@@ -184,7 +184,7 @@
 
   - 实现效果如下:
 
-    <img src="..\pic\Lab-6\2.jpg" alt="2" style="zoom:50%;" />
+    <img src="../pic/Lab-6/2.jpg" alt="2" style="zoom:50%;" />
 
 
 ### 逻辑实现
@@ -288,7 +288,7 @@
 
   - 实现效果
 
-    <img src="..\pic\Lab-6\3.jpg" alt="3" style="zoom:33%;" />
+    <img src="../pic/Lab-6/3.jpg" alt="3" style="zoom:33%;" />
 
     
 
@@ -560,7 +560,7 @@
 
   - 实现效果
 
-    <img src="..\pic\Lab-6\4.jpg" alt="4" style="zoom:33%;" />
+    <img src="../pic/Lab-6/4.jpg" alt="4" style="zoom:33%;" />
 
 ### 自定义组件样式及逻辑
 
@@ -568,7 +568,7 @@
 
 - 首先在组件文件夹`components`中新建文件夹`time`, 结构如下
 
-  <img src="..\pic\Lab-6\5.jpg" alt="4" style="zoom:33%;" />
+  <img src="../pic/Lab-6/5.jpg" alt="4" style="zoom:33%;" />
 
 - 组件样式如下
 
@@ -753,9 +753,9 @@
 
 ## 三、程序运行结果
 
-<img src="..\pic\Lab-6\7.jpg" alt="7" style="zoom:15%;" /><img src="..\pic\Lab-6\8.jpg" alt="8" style="zoom:15%;" />
+<img src="../pic/Lab-6/7.jpg" alt="7" style="zoom:15%;" /><img src="../pic/Lab-6/8.jpg" alt="8" style="zoom:15%;" />
 
-<img src="..\pic\Lab-6\9.jpg" alt="9" style="zoom:15%;" /><img src="..\pic\Lab-6\10.jpg" alt="10" style="zoom:15%;" />
+<img src="../pic/Lab-6/9.jpg" alt="9" style="zoom:15%;" /><img src="../pic/Lab-6/10.jpg" alt="10" style="zoom:15%;" />
 
 ### 创新点
 

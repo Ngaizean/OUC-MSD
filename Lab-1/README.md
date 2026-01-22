@@ -33,7 +33,7 @@
 
   
 
-  <img src="..\pic\Lab-1\1.jpg" alt="1" style="zoom:33%;" />
+  <img src="../pic/Lab-1/1.jpg" alt="1" style="zoom:33%;" />
 
   
 
@@ -41,7 +41,7 @@
 
   
 
-  <img src="..\pic\Lab-1\2.jpg" alt="2" style="zoom: 33%;" />
+  <img src="../pic/Lab-1/2.jpg" alt="2" style="zoom: 33%;" />
 
   
 
@@ -49,7 +49,7 @@
 
   
 
-  <img src="..\pic\Lab-1\3.jpg" alt="3" style="zoom: 33%;" />
+  <img src="../pic/Lab-1/3.jpg" alt="3" style="zoom: 33%;" />
 
 
 
@@ -57,7 +57,7 @@
 
   
 
-  <img src="..\pic\Lab-1\4.jpg" alt="4" style="zoom:33%;" />
+  <img src="../pic/Lab-1/4.jpg" alt="4" style="zoom:33%;" />
 
 ### 手动创建小程序
 
@@ -65,9 +65,9 @@
 
   
 
-  <img src="..\pic\Lab-1\5.jpg" alt="5" style="zoom: 25%;" />
+  <img src="../pic/Lab-1/5.jpg" alt="5" style="zoom: 25%;" />
 
-  <img src="..\pic\Lab-1\6.jpg" alt="6" style="zoom: 20%;" />
+  <img src="../pic/Lab-1/6.jpg" alt="6" style="zoom: 20%;" />
 
   
 
@@ -81,7 +81,7 @@
 
     
 
-    <img src="..\pic\Lab-1\7.jpg" alt="7" style="zoom:33%;" />
+    <img src="../pic/Lab-1/7.jpg" alt="7" style="zoom:33%;" />
 
     
   
@@ -89,7 +89,7 @@
   
     
   
-    <img src="..\pic\Lab-1\8.jpg" alt="8" style="zoom:33%;" />
+    <img src="../pic/Lab-1/8.jpg" alt="8" style="zoom:33%;" />
   
     
   
@@ -115,7 +115,7 @@
 
     
 
-    <img src="..\pic\Lab-1\9.jpg" alt="9" style="zoom:33%;" />
+    <img src="../pic/Lab-1/9.jpg" alt="9" style="zoom:33%;" />
 
 #### 基础页面设计
 
@@ -183,17 +183,17 @@
 
   
 
-  <img src="..\pic\Lab-1\10.jpg" alt="10" style="zoom:33%;" /><img src="..\pic\Lab-1\11.jpg" alt="11" style="zoom:33%;" />
+  <img src="../pic/Lab-1/10.jpg" alt="10" style="zoom:33%;" /><img src="../pic/Lab-1/11.jpg" alt="11" style="zoom:33%;" />
 
 ## 三、程序运行结果
 
 ### 模板创建
 
-<img src="..\pic\Lab-1\3.jpg" alt="3" style="zoom:33%;" />
+<img src="../pic/Lab-1/3.jpg" alt="3" style="zoom:33%;" />
 
 ### 手动创建
 
-<img src="..\pic\Lab-1\10.jpg" alt="10" style="zoom:33%;" /><img src="..\pic\Lab-1\11.jpg" alt="11" style="zoom:33%;" />
+<img src="../pic/Lab-1/10.jpg" alt="10" style="zoom:33%;" /><img src="../pic/Lab-1/11.jpg" alt="11" style="zoom:33%;" />
 
 
 
@@ -214,7 +214,7 @@
   代码补全应该选择函数类而不是变量类, 后者编译时不会报错但是渲染会变成一片空白, 两者区别见下图, 这是新手入手比较容易犯的错误
   ```
 
-  <img src="..\pic\Lab-1\12.jpg" alt="12" style="zoom:33%;" /><img src="..\pic\Lab-1\13.jpg" alt="13" style="zoom:37%;" />
+  <img src="../pic/Lab-1/12.jpg" alt="12" style="zoom:33%;" /><img src="../pic/Lab-1/13.jpg" alt="13" style="zoom:37%;" />
 
 - 其他
 
